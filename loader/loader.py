@@ -20,7 +20,7 @@ def upload():
         content = request.values['content']
         posts = load_posts()
         posts.append({
-            'pic': f'uploads/images/{filename}',
+            'pic': f'/uploads/images/{filename}',
             'content': content
         })
         uploads_posts(posts)
